@@ -15,8 +15,13 @@
 
 namespace App\Creational\AbstractFactory;
 
+use App\Creational\AbstractFactory\Interfaces\Button;
+use App\Creational\AbstractFactory\Interfaces\GUIFactory;
 
-class WinFactory
+class WinFactory implements GUIFactory
 {
-
+    public function createButton(): Button
+    {
+        return new WinButton();
+    }
 }

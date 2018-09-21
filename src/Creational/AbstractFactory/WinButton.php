@@ -15,8 +15,12 @@
 
 namespace App\Creational\AbstractFactory;
 
+use App\Creational\AbstractFactory\Interfaces\Button;
 
-class WinCheckbox
+class WinButton implements Button
 {
-
+    public function press()
+    {
+        echo "Window button is pressed." .PHP_EOL;
+    }
 }

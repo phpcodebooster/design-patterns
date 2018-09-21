@@ -13,14 +13,9 @@
 | Website: http://www.phpcodebooster.com
 */
 
-namespace App\Creational\AbstractFactory;
-
-
-use App\Creational\AbstractFactory\Products\Button;
-use App\Creational\AbstractFactory\Products\CheckBox;
+namespace App\Creational\AbstractFactory\Interfaces;
 
 interface GUIFactory
 {
     public function createButton(): Button;
-    public function createCheckbox(): CheckBox;
 }

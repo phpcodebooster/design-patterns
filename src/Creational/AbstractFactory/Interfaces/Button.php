@@ -13,7 +13,7 @@
 | Website: http://www.phpcodebooster.com
 */
 
-namespace App\Creational\AbstractFactory\Interface;
+namespace App\Creational\AbstractFactory\Interfaces;
 
 
 interface Button
