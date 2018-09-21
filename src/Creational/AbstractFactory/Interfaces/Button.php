@@ -7,14 +7,16 @@
 | -------------------------------------------------------------------------
 |
 | User: spatel
-| Date: 18/09/18
-| Time: 6:03 PM
+| Date: 21/09/18
+| Time: 3:51 PM
 | Version: 1.0
 | Website: http://www.phpcodebooster.com
 */
-require __DIR__. '/vendor/autoload.php';
+
+namespace App\Creational\AbstractFactory\Interface;
 
 
-// Abstract Factory Method
-$app = new \App\Creational\AbstractFactory\Application(new \App\Creational\AbstractFactory\WinFactory());
-$app->run();
+interface Button
+{
+    public function press();
+}
