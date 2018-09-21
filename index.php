@@ -15,6 +15,11 @@
 require __DIR__. '/vendor/autoload.php';
 
 
-// Abstract Factory Method
+// Abstract Factory Design Pattern
 $app = new \App\Creational\AbstractFactory\Application(new \App\Creational\AbstractFactory\WinFactory());
 $app->run();
+
+
+// Singleton Design Pattern
+$connection = \App\Creational\Singleton\DbConnection::getInstance();
+$connection->fetch();
